@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App.jsx";
 import axios from "axios";
 
-const backend_url = "http://localhost:4000";
+const backend_url = "https://rcsc-backend.onrender.com";
 
 export const Context = createContext({
   isAuthorized: false,
@@ -13,7 +13,7 @@ export const Context = createContext({
 
 const AppWrapper = () => {
   const [isAuthorized, setIsAuthorized] = useState(false);
-  const [BACKEND_URL, setBACKEND_URL] = useState("http://localhost:4000");
+  const [BACKEND_URL, setBACKEND_URL] = useState("https://rcsc-backend.onrender.com");
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
