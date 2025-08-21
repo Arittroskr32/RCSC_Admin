@@ -1,0 +1,81 @@
+.add-member-container {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #080615C9;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 8vh;
+  }
+
+  .add-member-container h2{
+    font-size: 2rem;
+  }
+  
+  .add-member-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-member-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .add-member-container label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .add-member-container input, select {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #0E0A29C9;
+    color: white;
+  }
+  
+  .add-member-container button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .add-member-container button:hover {
+    background-color: #343d9a;
+  }
+  
+  /* Responsive Design for screens smaller than 500px */
+  @media screen and (max-width: 500px) {
+    .add-member-container {
+      width: 90%; /* Adjust container width for smaller screens */
+      padding: 15px; /* Reduce padding */
+    }
+  
+    .add-member-container h2 {
+      font-size: 18px; 
+    }
+  
+    .add-member-container label, input, select, button {
+      font-size: 12px; 
+    }
+  
+    .add-member-container input, select, button {
+      padding: 10px; 
+    }
+  }
+  

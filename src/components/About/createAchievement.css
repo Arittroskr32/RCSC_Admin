@@ -1,0 +1,387 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Create Achievement Styles */
+.create-achievement-container {
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+}
+
+.create-achievement-card {
+  max-width: 700px;
+  width: 90%;
+  margin: 0 auto;
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  display: block;
+}
+
+/* Card Header */
+.card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  display: block;
+}
+
+.card-header svg {
+  font-size: 3rem;
+  color: #f59e0b;
+  margin-bottom: 1rem;
+}
+
+.card-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-header p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* Form Styles */
+.create-form {
+  display: block !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.form-row {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.form-group {
+  display: block !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.form-group.full-width {
+  width: 100% !important;
+  display: block !important;
+  clear: both;
+  box-sizing: border-box;
+  max-width: none !important;
+  flex: none !important;
+}
+
+/* Special styling for description group */
+.description-group {
+  position: relative;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  width: 100% !important;
+  box-sizing: border-box;
+  display: block !important;
+  clear: both;
+}
+
+.description-group::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.05), rgba(217, 119, 6, 0.05));
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.description-group label {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.description-group textarea,
+.form-group textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(245, 158, 11, 0.2);
+  min-height: 90px;
+  max-height: 140px;
+  font-size: 0.98rem;
+  padding: 0.7rem 1rem;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.description-group textarea:focus,
+.form-group textarea:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #f59e0b;
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.2);
+}
+
+.form-group label {
+  display: block !important;
+  width: 100% !important;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+  clear: both;
+}
+
+.form-group label svg {
+  color: #f59e0b;
+  font-size: 1rem;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block !important;
+  width: 100% !important;
+  padding: 1rem 1.25rem;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  line-height: 1.5;
+  box-sizing: border-box !important;
+  margin: 0;
+  clear: both;
+  max-width: none !important;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #f59e0b;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 4px rgba(245, 158, 11, 0.15);
+  transform: translateY(-2px);
+}
+
+.form-group input:disabled,
+.form-group textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 200px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.form-group small {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  padding-left: 0.5rem;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.form-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  min-width: 140px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.form-actions button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.form-actions button svg {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.cancel-btn {
+  background: linear-gradient(135deg, #6b7280, #4b5563);
+  color: #fff;
+  border: 1px solid rgba(107, 114, 128, 0.5);
+}
+
+.cancel-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #4b5563, #374151);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(107, 114, 128, 0.3);
+}
+
+.save-btn {
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: #fff;
+}
+
+.save-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #d97706, #b45309);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+}
+
+.form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .create-achievement-container {
+    padding: 1rem;
+  }
+  
+  .create-achievement-card {
+    width: 95%;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+  
+  .card-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .card-header p {
+    font-size: 0.95rem;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+  
+  .form-actions button {
+    width: 100%;
+  }
+
+  .description-group {
+    margin: 0.5rem 0;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-achievement-container {
+    padding: 0.5rem;
+  }
+  
+  .create-achievement-card {
+    width: 98%;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  
+  .card-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .card-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .card-header p {
+    font-size: 0.9rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .form-group textarea {
+    min-height: 150px;
+  }
+
+  .description-group {
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+  }
+  
+  .form-actions button {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+}

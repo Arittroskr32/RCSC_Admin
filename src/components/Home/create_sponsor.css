@@ -1,0 +1,78 @@
+.create-sponsor-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #0E0A29A8;
+    margin-top: 10vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .existing-sponsor {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .existing-sponsor h3 {
+    font-size: 18px;
+    color: white;
+  }
+  
+  .existing-sponsor p {
+    font-size: 16px;
+    color: white;
+  }
+  
+  .existing-sponsor img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  
+  .sponsor-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 14px;
+    color: white;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submit-button {
+    padding: 12px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+  

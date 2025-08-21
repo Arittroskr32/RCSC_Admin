@@ -1,0 +1,216 @@
+
+/* Modern card container */
+.contact-details-card {
+    max-width: 540px;
+    margin: 48px auto 0 auto;
+    padding: 36px 32px 28px 32px;
+    background: #0E0A29C9;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.contact-details-card *,
+.contact-details-card *:not(svg) {
+    color: #fff !important;
+}
+
+.contact-details-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 8px;
+}
+.contact-details-avatar {
+    width: 54px;
+    height: 54px;
+    background: #4f8cff;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    box-shadow: 0 1px 4px rgba(79,140,255,0.13);
+}
+.contact-details-header h2 {
+    margin: 0 0 2px 0;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1a2a4f;
+}
+.contact-details-email {
+    font-size: 1rem;
+    color: #4f8cff;
+    margin: 0;
+}
+.contact-details-phone {
+    font-size: 0.98rem;
+    color: #3a4a6b;
+    margin: 0;
+}
+
+.contact-details-message-block {
+    margin-bottom: 10px;
+}
+.contact-details-message-block label {
+    font-weight: 600;
+    color: #1a2a4f;
+    margin-bottom: 2px;
+    display: block;
+}
+.contact-details-message {
+    background: #1e293b;
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #fff;
+    font-size: 1.05rem;
+    word-break: break-word;
+    margin-top: 2px;
+}
+
+.contact-details-reply-block h3 {
+    margin: 18px 0 8px 0;
+    font-size: 1.08rem;
+    color: #1a2a4f;
+    font-weight: 600;
+}
+.reply-textarea {
+    width: 100%;
+    height: 110px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1.5px solid #d0d7e2;
+    font-size: 1rem;
+    resize: vertical;
+    background-color: #18122B;
+    color: #fff;
+    margin-bottom: 10px;
+    transition: border 0.2s, background 0.2s;
+}
+.reply-textarea:focus {
+    outline: none;
+    border: 1.5px solid #4f8cff;
+    background-color: #18122B;
+    color: #fff;
+}
+.button-group {
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+.reply-btn {
+    padding: 10px 22px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4f8cff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.reply-btn:hover {
+    background-color: #2563eb;
+}
+.delete-btn {
+    padding: 10px 22px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e11d48;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+}
+.delete-btn:hover {
+    background-color: #be123c;
+}
+
+@media (max-width: 700px) {
+    .contact-details-card {
+        max-width: 98vw;
+        padding: 12px 2vw;
+    }
+    .contact-details-header {
+        gap: 10px;
+    }
+    .contact-details-avatar {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    .reply-btn, .delete-btn {
+        font-size: 0.98rem;
+        padding: 10px 10px;
+    }
+}
+
+/* Reply Section */
+.reply-textarea {
+    /* removed duplicate, unified above */
+}
+
+.reply-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: #06b6d4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.reply-btn:hover {
+    background-color: #0891b2;
+}
+
+.delete-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+@media (max-width: 500px) {
+    .contact-details {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .contact-details h2 {
+        font-size: 18px;
+    }
+
+    .contact-details p {
+        font-size: 14px;
+        margin-bottom: 3vh;
+    }
+
+    .reply-textarea {
+        height: 100px;
+        font-size: 13px;
+        background-color: #18122B;
+        color: #fff;
+    }
+
+    .reply-btn,
+    .delete-btn {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+    }
+}

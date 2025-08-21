@@ -1,0 +1,239 @@
+/* Modern Member Display Styles */
+.member-display-container-modern {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #18162c 60%, #23234b 100%);
+  padding: 32px 0;
+}
+.member-card-modern {
+  background: #23234b;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(127,156,245,0.13);
+  padding: 36px 32px 28px 32px;
+  max-width: 540px;
+  width: 100%;
+}
+.member-avatar-section {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 18px;
+}
+.member-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #18162c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 2px 8px 0 rgba(127,156,245,0.10);
+}
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.avatar-placeholder {
+  color: #7f9cf5;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.member-main-info h2 {
+  color: #7f9cf5;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+.member-post {
+  color: #f3f3f3;
+  font-size: 1.1rem;
+  margin-bottom: 2px;
+}
+.member-committee {
+  color: #b3b3b3;
+  font-size: 1rem;
+}
+.member-form-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 180px;
+  margin-bottom: 0;
+}
+.form-group.full-width {
+  flex: 1 1 100%;
+}
+.form-group label {
+  font-size: 1.05rem;
+  color: #b3b3b3;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.form-group input, .form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1.5px solid #7f9cf5;
+  border-radius: 7px;
+  background: #18162c;
+  color: #f3f3f3;
+  margin-bottom: 2px;
+  outline: none;
+  transition: border 0.18s;
+}
+.form-group input:focus, .form-group select:focus {
+  border: 1.5px solid #5a67d8;
+}
+.button-group-modern {
+  display: flex;
+  gap: 14px;
+  margin-top: 18px;
+}
+.update-button-modern {
+  background: linear-gradient(90deg, #7f9cf5 60%, #5a67d8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 0;
+  font-size: 1.13rem;
+  font-weight: 700;
+  cursor: pointer;
+  flex: 1 1 0;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(127,156,245,0.13);
+}
+.update-button-modern:hover {
+  background: linear-gradient(90deg, #5a67d8 60%, #7f9cf5 100%);
+  box-shadow: 0 4px 16px rgba(127,156,245,0.18);
+}
+.delete-button-modern {
+  background: #e53e3e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 0;
+  font-size: 1.13rem;
+  font-weight: 700;
+  cursor: pointer;
+  flex: 1 1 0;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(229,62,62,0.13);
+}
+.delete-button-modern:hover {
+  background: #c53030;
+  box-shadow: 0 4px 16px rgba(229,62,62,0.18);
+}
+/* General styling */
+.member-display-container {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: #080615C9;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 8vh;
+}
+
+.member-display-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.member-display-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.member-display-container label {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.member-display-container input, select {
+  padding: 8px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  background-color: #0E0A29C9;
+  color: white;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+.delete-button {
+  background-color: #f44336; /* Red color */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
+}
+
+/* Media Query for screens under 500px */
+@media (max-width: 500px) {
+  .member-display-container {
+    width: 90%; /* Reduce width for smaller screens */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  h2 {
+    font-size: 18px; /* Make the header smaller */
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 12px; /* Reduce label font size */
+  }
+
+  input, select {
+    padding: 10px; /* Increase padding for easier touch interaction */
+    font-size: 16px; /* Increase input font size for better readability */
+  }
+
+  button {
+    font-size: 18px; /* Increase button font size */
+    padding: 12px; /* Increase button padding for easier click interaction */
+  }
+}

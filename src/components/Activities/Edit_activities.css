@@ -1,0 +1,96 @@
+/* Modern Edit Activity Styles */
+.edit-activity-container-modern {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #18162c 60%, #23234b 100%);
+  padding: 32px 0;
+}
+.edit-activity-card {
+  background: #23234b;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(127,156,245,0.13);
+  padding: 36px 32px 28px 32px;
+  max-width: 540px;
+  width: 100%;
+}
+.edit-activity-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.activity-icon {
+  font-size: 2.1rem;
+  color: #7f9cf5;
+}
+.edit-activity-header h2 {
+  color: #7f9cf5;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+.edit-activity-form-modern {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.form-row {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  min-width: 180px;
+  margin-bottom: 0;
+}
+.form-group.full-width {
+  flex: 1 1 100%;
+}
+.form-group label {
+  font-size: 1.05rem;
+  color: #b3b3b3;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.form-group input, .form-group textarea, .form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1.5px solid #7f9cf5;
+  border-radius: 7px;
+  background: #18162c;
+  color: #f3f3f3;
+  margin-bottom: 2px;
+  outline: none;
+  transition: border 0.18s;
+}
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+  border: 1.5px solid #5a67d8;
+}
+.form-group textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+.submit-btn-modern {
+  background: linear-gradient(90deg, #7f9cf5 60%, #5a67d8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 13px 0;
+  font-size: 1.13rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(127,156,245,0.13);
+}
+.submit-btn-modern:hover {
+  background: linear-gradient(90deg, #5a67d8 60%, #7f9cf5 100%);
+  box-shadow: 0 4px 16px rgba(127,156,245,0.18);
+}
+  

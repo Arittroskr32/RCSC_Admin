@@ -1,0 +1,528 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Edit Announcement Styles */
+.edit-announcement-container {
+  min-height: 100vh;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 0;
+}
+
+.edit-announcement-card {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 2rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  display: block;
+}
+
+/* Card Header */
+.card-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  display: block;
+}
+
+.card-header h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.card-header p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* Form Styles */
+.edit-form {
+  display: block !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.form-row {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.form-group {
+  display: block !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  clear: both;
+  box-sizing: border-box;
+}
+
+.form-group.full-width {
+  width: 100% !important;
+  display: block !important;
+  clear: both;
+  box-sizing: border-box;
+  max-width: none !important;
+  flex: none !important;
+}
+
+/* Special styling for description group */
+.description-group {
+  position: relative;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  width: 100% !important;
+  box-sizing: border-box;
+  display: block !important;
+  clear: both;
+}
+
+.description-group::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(139, 92, 246, 0.05));
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 16px;
+  z-index: -1;
+}
+
+.description-group label {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.description-group textarea {
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(59, 130, 246, 0.2);
+}
+
+.description-group textarea:focus {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
+}
+
+.form-group label {
+  display: block !important;
+  width: 100% !important;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+  clear: both;
+}
+
+.form-group label svg {
+  color: #3b82f6;
+  font-size: 1rem;
+  margin-right: 0.75rem;
+  vertical-align: middle;
+}
+
+.form-group input,
+.form-group textarea {
+  display: block !important;
+  width: 100% !important;
+  padding: 1rem 1.25rem;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  line-height: 1.5;
+  box-sizing: border-box !important;
+  margin: 0;
+  clear: both;
+  max-width: none !important;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+.form-group input:disabled,
+.form-group textarea:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 300px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.form-group small {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  padding-left: 0.5rem;
+}
+
+/* Override any inherited flexbox or grid behaviors */
+.edit-form *,
+.form-row *,
+.form-group * {
+  max-width: none !important;
+  flex-shrink: 0 !important;
+  flex-grow: 1 !important;
+  flex-basis: auto !important;
+}
+
+.edit-form,
+.form-row,
+.form-group,
+.form-group.full-width {
+  flex-direction: column !important;
+  align-items: stretch !important;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.form-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  min-width: 140px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1;
+}
+
+.form-actions button span {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.cancel-btn {
+  background: linear-gradient(135deg, #6b7280, #4b5563);
+  color: #fff;
+  border: 1px solid rgba(107, 114, 128, 0.5);
+}
+
+.cancel-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #4b5563, #374151);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(107, 114, 128, 0.3);
+}
+
+.delete-btn {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: #fff;
+}
+
+.delete-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #dc2626, #b91c1c);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(239, 68, 68, 0.3);
+}
+
+.save-btn {
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: #fff;
+}
+
+.save-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+.form-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+.form-actions button svg {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Ensure button text is centered */
+.form-actions button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+/* Loading States */
+.loading-spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  color: #fff;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-left: 4px solid #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.loading-spinner p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Error States */
+.error-state {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: #fff;
+  max-width: 500px;
+  margin: 0 auto;
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.8), rgba(15, 23, 42, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+}
+
+.error-state h2 {
+  font-size: 1.8rem;
+  color: #ef4444;
+  margin-bottom: 1rem;
+}
+
+.error-state p {
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
+  background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background: linear-gradient(135deg, #1d4ed8, #1e40af);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .edit-announcement-container {
+    padding: 1rem;
+  }
+  
+  .edit-announcement-card {
+    width: 95%;
+    padding: 1.5rem;
+    margin: 0 auto;
+  }
+  
+  .card-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .card-header p {
+    font-size: 0.95rem;
+  }
+  
+  .edit-form {
+    width: 100%;
+  }
+  
+  .form-row {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .form-group {
+    width: 100%;
+  }
+  
+  .description-group {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    width: 100%;
+  }
+  
+  .form-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .form-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .edit-announcement-container {
+    padding: 0.5rem;
+  }
+  
+  .edit-announcement-card {
+    width: 98%;
+    padding: 1rem;
+    margin: 0 auto;
+  }
+  
+  .card-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .card-header h2 {
+    font-size: 1.6rem;
+  }
+  
+  .card-header p {
+    font-size: 0.9rem;
+  }
+  
+  .edit-form {
+    width: 100%;
+  }
+  
+  .form-row {
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  
+  .form-group {
+    width: 100%;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+  
+  .form-group textarea {
+    min-height: 200px;
+  }
+  
+  .description-group {
+    padding: 0.75rem;
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+  
+  .form-actions {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    width: 100%;
+  }
+  
+  .form-actions button {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+    width: 100%;
+  }
+}
+  
