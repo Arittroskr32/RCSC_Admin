@@ -32,6 +32,11 @@ const Navbar = () => {
       });
 
       Cookies.remove("token");
+      // Clear fallback token and axios header
+      try {
+        localStorage.removeItem("token");
+        delete axios.defaults.headers.common["Authorization"];
+      } catch (e) {}
       setIsAuthorized(false);
       toast.success("Logged Out Successfully!", { autoClose: 2000 });
       navigate("/login");

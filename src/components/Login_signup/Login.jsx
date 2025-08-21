@@ -44,6 +44,17 @@ export default function Login() {
 
       if (response.data.success) {
         setIsAuthorized(true);
+        // Save token from response as a fallback for environments where the httpOnly cookie
+        // cannot be set/sent (e.g., cross-site static hosting). We still rely on cookie + withCredentials.
+        if (response.data.token) {
+          try {
+            localStorage.setItem("token", response.data.token);
+            // set axios default header so later requests include Authorization header
+            axios.defaults.headers.common["Authorization"] = `Bearer ${response.data.token}`;
+          } catch (e) {
+            // ignore storage errors
+          }
+        }
         toast.success("Login Successful! Redirecting...");
         setTimeout(() => setRedirect(true), 1500);
       } else {

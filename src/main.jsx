@@ -19,6 +19,14 @@ const AppWrapper = () => {
   useEffect(() => {
     setBACKEND_URL(backend_url);
 
+    // Restore fallback token (if any) to axios default header so requests include Authorization
+    try {
+      const fallbackToken = localStorage.getItem("token");
+      if (fallbackToken) {
+        axios.defaults.headers.common["Authorization"] = `Bearer ${fallbackToken}`;
+      }
+    } catch (e) {}
+
     const checkAuthStatus = async () => {
       try {
         const response = await axios.get(`${BACKEND_URL}/api/admin/getuser`, {
